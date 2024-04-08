@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+  
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 35px;
+            background-color: #faf8f8;
+            color: #000; /* Changed text color */
+        }
+
+        .logo {
+          height: auto px;/* Adjusted for responsiveness */
+          width: 100px;
+        }
+        .icons{
+            height: 30 px;
+            width: 100px;
+            margin-right: 20;
+
+
+            
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-links a {
+            color: black; /* Changed text color */
+            text-decoration: none;
+            margin: 0 20px;
+    
+            font-size: 18px; /* Adjusted font size for responsiveness */
+            font-weight: bold;
+        }
+        .image-container {
+            width: 100%;
+            height: auto; /* Changed to auto for responsiveness */
+            max-height: 60vh; /* Adjusted for responsiveness */
+            overflow: hidden;
+            position: relative;
+        }
+        .image-text {
+            height: auto; /* Changed to auto for responsiveness */
+            max-width: 300px; /* Adjusted for responsiveness */
+            background-image: linear-gradient(to right, black, grey);
+            position: absolute;
+            top: 80%;
+            left: 10%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            font-size: 1.5rem; /* Adjusted font size for responsiveness */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px; /* Added padding for better appearance */
+        }
+        img {
+            width: 100%;
+            height: auto; /* Changed to auto for responsiveness */
+            max-height: 60vh; /* Adjusted for responsiveness */
+        }
+
+        .down{
+            height: auto; /* Changed to auto for responsiveness */
+            background-color: rgb(177, 177, 240);
+            display: flex;
+            flex-wrap: wrap; /* Added flex-wrap for responsiveness */
+            padding: 10px;
+        }
+        .down1, .down2, .down3 {
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem; /* Adjusted font size for responsiveness */
+            line-height: 1.5; /* Adjusted line height for better readability */
+        }
+        .item {
+            display: flex;
+            flex-wrap: wrap; /* Added flex-wrap for responsiveness */
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            text-align: center;
+        }
+        .item1, .item2, .item3 {
+            flex: 1;
+            max-width: 300px; /* Adjusted for responsiveness */
+            margin: 15px;
+            text-align: center;
+        }
+        .items {
+            width: 100%;
+            height: auto; /* Changed to auto for responsiveness */
+        }
+        .learn-more-box {
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 0 auto; /* Centered horizontally */
+            margin-top: 15px; /* Added margin top for better appearance */
+        }
+        .ics {
+            width: 100;
+            height: auto;
+            display: flex;
+
+            align-items: center;
+            margin-right: 20px;
+        }
+        h2 {
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 768px) {
+    .header {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .nav-links a {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .image-text {
+      width: 100%; /* Full width on smaller screens */
+    }
+    
+  }
+
+
+        /*@media (min-width: 992px) 
+            .header {
+                padding: 20px 35px; /* Increased padding for larger screens */
+            /*}
+            .nav-links a {
+                font-size: 20px; /* Increased font size for larger screens */
+            /*}
+            .image-text {
+                font-size: 2rem; /* Increased font size for larger screens */
+            /*}
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img src="./phoenix-logo.png" alt="Left Logo" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Order</a>
+            <a href="#">Food</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="ics">
+            <div>
+                <img src="./whatsapp2.png" alt="Right Logo" class="icons" >
+            </div>
+            <div>
+                <img src="./facebook_665209.png" alt="Right Logo" class="icons">
+            </div>
+        </div>
+    </header>
+    <div class="image-container">
+        <img src="./heroimg.jpg" alt="">
+        <div class="image-text">
+            <h4>Lorem Ipsum</h4>
+        </div>
+    </div>
+    <div class="down">
+        <div class="down1">
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="down2">
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="down3">
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+    </div>
+    <h2>Lorem Ipsum</h2>
+    <div class="item">
+        <div class="item1">
+            <img class="items" src="./rooms.jpg" alt="">
+            <h3>Rooms</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div> <button class="learn-more-box">
+                Learn More</button>
+            </div>
+        </div>
+        <div class="item2">
+            <img class="items" src="./dining.jpg" alt="">
+            <h3>Dining</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div> <button class="learn-more-box">
+                Learn More</button>
+            </div>
+        </div>
+        <div class="item3">
+            <img class="items" src="./pool.jpg" alt="">
+            <h3>Pools</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div> <button class="learn-more-box"> learn more </button>
+
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
